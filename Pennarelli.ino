@@ -50,6 +50,7 @@ void setup(){
     }
     String mac=Pennarelli::getMAC();
     String ip=Pennarelli::getIP();
+    Pennarelli::useEthernet();
     Ethernet.begin(mac,ip);
     delay(1000);
     Pennarelli::sendStartRequest(codM,client);
